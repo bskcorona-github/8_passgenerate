@@ -3,7 +3,6 @@ package main
 import (
 	"fmt"
 	"math/rand"
-	"time"
 )
 
 const (
@@ -25,8 +24,6 @@ func main() {
 }
 
 func generatePassword(length int) string {
-	// 乱数のシードを設定します
-	rand.Seed(time.Now().UnixNano())
 
 	// 使用する文字セットを定義します
 	charset := lowercaseLetters + uppercaseLetters + digits + symbols
